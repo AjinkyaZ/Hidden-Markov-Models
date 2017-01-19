@@ -1,0 +1,31 @@
+S = np.array([0, 1]) # 0 Healthy, 1 Fever
+S_names = ('Healthy', 'Fever')
+pi = np.array([0.6, 0.4])
+O = np.array(['Normal', 'Cold', 'Dizzy'])
+A = np.array([[0.7, 0.3], [0.4, 0.6]]) # {H:{H, F}, F:{H, F}} Transition Matrix
+B = np.array([[0.5, 0.4, 0.1], [0.1, 0.3, 0.6]]) # {H: {N, C, D}, F: {N, C, D}} Emission Matrix
+Y = np.array([0, 1, 2]) # 0 Normal, 1 Cold, 2 Dizzy
+
+S = np.array([0, 1]) # 0 Rainy, 1 Sunny
+S_names = ('Rainy', 'Sunny')
+pi = np.array([0.5, 0.5])
+O = np.array(['Happy', 'Grumpy'])
+A = np.array([[0.6, 0.4], [0.2, 0.8]]) # {R:{R, S}, S:{R, S}} Transition Matrix
+B = np.array([[0.4, 0.6], [0.9, 0.1]]) # {R: {H, G}, S: {H, G}} Emission Matrix
+Y = np.array([0, 0, 1]) # 0 Happy, 1 Grumpy
+
+S = np.array([0, 1]) # 0 Rainy, 1 Sunny
+S_names = ('Rainy', 'Sunny')
+pi = np.array([0.5, 0.5])
+O = np.array(['Umbrella', 'No Umbrella'])
+A = np.array([[0.7, 0.3], [0.3, 0.7]]) # {R:{R, S}, S:{R, S}} Transition Matrix
+B = np.array([[0.9, 0.1], [0.2, 0.8]]) # {R: {U, N}, S: {U, N}} Emission Matrix
+Y = np.array([0, 0, 1, 0, 0]) # 0 Umbrella, 1 No Umbrella
+
+S = np.array([0, 1]) # 0 Rainy, 1 Sunny
+S_names = ('Rainy', 'Sunny')
+pi = np.array([0.6, 0.4])
+O = np.array(['walk', 'shop', 'clean'])
+A = np.array([[0.7, 0.3], [0.4, 0.6]]) # {R:{R, S}, S:{R, S}} Transition Matrix
+B = np.array([[0.1, 0.4, 0.5], [0.6, 0.3, 0.1]]) # {R: {W, S, C}, S: {W, S, C}} Emission Matrix
+Y = np.array([0, 2, 1, 1, 2, 0]) # 0 walk, 1 shop, 2 clean   
